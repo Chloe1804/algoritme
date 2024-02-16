@@ -1,1 +1,30 @@
+<html>
+<body>
+<script>
 
+
+    var zoekGetal, i;
+    var getallenRij = new Array(10);
+
+    for (i = 0; i <= 9; i++) {
+        getallenRij[i] = Math.floor(Math.random() * 100);
+    }
+    window.alert("Welk getal wil je zoeken: ");
+    zoekGetal = Number(window.prompt('Enter a value for zoekGetal'));
+    i = 0;
+
+    // Wat moet er in de WHILE-lus komen om het algoritme te laten werken?
+    while (getallenRij[i] != zoekGetal) {
+        window.alert("niet geraden, probeer opnieuw");
+        zoekGetal = Number(window.prompt('Enter a value for zoekGetal'));
+    }
+    if (i == 10) {
+        window.alert("Getal niet gevonden.");
+    } else {
+        window.alert(zoekGetal.ToString() + " staat op plek " + i);
+    }
+
+
+</script>
+</body>
+</html>
